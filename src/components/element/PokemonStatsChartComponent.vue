@@ -1,6 +1,5 @@
 <template>
     <div class="pokemon-stats-chart">
-      <h3 class="font-semibold text-gray-700">Estadísticas</h3>
       <div class="mt-4">
         <Bar :data="chartData" :options="chartOptions" />
       </div>
