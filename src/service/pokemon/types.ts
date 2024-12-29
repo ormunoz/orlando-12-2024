@@ -17,7 +17,8 @@ export class ShowPokemon {
     weight: number;
     stats: { name: string; value: number }[];
     sound: string;
-    evolutionChain: any;
+    description: string;
+    evolutionChain: { name: string; image: string; trigger: string | null; min_level: number | null }[]
   
     constructor(
       id: number,
@@ -28,6 +29,7 @@ export class ShowPokemon {
       weight: number,
       stats: { name: string; value: number }[],
       sound: string,
+      description: string,
       evolutionChain: any
     ) {
       this.id = id;
@@ -38,6 +40,7 @@ export class ShowPokemon {
       this.weight = weight;
       this.stats = stats;
       this.sound = sound;
+      this.description = description;
       this.evolutionChain = evolutionChain;
     }
   }
