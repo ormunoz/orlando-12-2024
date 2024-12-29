@@ -2,6 +2,7 @@ export enum EnvNames {
   PROD = 'production',
   DEV = 'development',
 }
+
 type EnvName = EnvNames.PROD | EnvNames.DEV;
 
 export interface EnvConfig {
@@ -11,11 +12,11 @@ export interface EnvConfig {
 
 const ENV_CONFIGS: Record<EnvName, EnvConfig> = {
   production: {
-    apiURL: process.env.VITE_API_URL || 'https://pokeapi.co/api/v2/',
+    apiURL: import.meta.env.VITE_API_URL || 'https://pokeapi.co/api/v2/',
     env: EnvNames.PROD,
   },
   development: {
-    apiURL: process.env.VITE_API_URL || 'https://pokeapi.co/api/v2/',
+    apiURL: import.meta.env.VITE_API_URL || 'https://pokeapi.co/api/v2/',
     env: EnvNames.DEV,
   },
 };
