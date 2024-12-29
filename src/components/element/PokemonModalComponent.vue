@@ -24,10 +24,8 @@
         <div class="mt-6">
           <h3 class="font-semibold text-gray-700">Estadísticas</h3>
           <div class="grid grid-cols-2 gap-4 mt-2">
-            <div v-for="stat in pokemon.stats" :key="stat.name"
-              class="bg-gray-50 p-2 rounded-lg shadow-sm flex justify-between">
-              <span class="text-gray-600 font-medium">{{ stat.name }}</span>
-              <span class="text-gray-800 font-semibold">{{ stat.value }}</span>
+            <div v-for="stat in pokemon.stats" :key="stat.name">
+              <PokemonInfoCard :label="stat.name" :value="`${stat.value}`" />
             </div>
           </div>
         </div>
@@ -49,9 +47,13 @@ import { defineComponent, PropType } from 'vue'
 import { ShowPokemon } from '@/service/pokemon/types'
 import { usePokemonStore } from '@/service/stores/pokemonStore'
 import { toast } from 'vue3-toastify';
+import PokemonInfoCard from './PokemonInfoCardComponent.vue';
 
 export default defineComponent({
   name: 'PokemonModal',
+  components: {
+    PokemonInfoCard
+  },
   props: {
     isOpen: {
       type: Boolean,
