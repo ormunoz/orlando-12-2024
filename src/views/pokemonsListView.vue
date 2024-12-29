@@ -24,11 +24,11 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue'
-import { PokemonServices } from "@/service/pokemon/pokemonServices"
-import { ShowPokemon } from "@/service/pokemon/types"
-import CardBoard from '@/components/element/CardBoardComponent.vue'
-import Pagination from '@/components/element/PaginationComponent.vue'
-import PokemonModal from '@/components/element/PokemonModalComponent.vue';
+import { PokemonServices } from "../service/pokemon/pokemonServices"
+import { ShowPokemon } from "../service/pokemon/types"
+import CardBoard from '../components/element/CardBoardComponent.vue'
+import Pagination from '../components/element/PaginationComponent.vue'
+import PokemonModal from '../components/element/PokemonModalComponent.vue';
 
 export default defineComponent({
     name: 'PokemonList',

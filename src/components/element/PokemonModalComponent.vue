@@ -44,8 +44,8 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { ShowPokemon } from '@/service/pokemon/types'
-import { usePokemonStore } from '@/service/stores/pokemonStore'
+import { ShowPokemon } from '../../service/pokemon/types'
+import { usePokemonStore } from '../../service/stores/pokemonStore'
 import { toast } from 'vue3-toastify';
 import PokemonInfoCard from './PokemonInfoCardComponent.vue';
 

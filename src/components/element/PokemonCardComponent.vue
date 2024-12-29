@@ -29,9 +29,9 @@
   
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import PokemonStatsChart from '@/components/element/PokemonStatsChartComponent.vue';
-  import ActionButtons from '@/components/element/ActionButtonsComponent.vue';
-  import { usePokemonStore } from '@/service/stores/pokemonStore';
+  import PokemonStatsChart from '../../components/element/PokemonStatsChartComponent.vue';
+  import ActionButtons from '../../components/element/ActionButtonsComponent.vue';
+  import { usePokemonStore } from '../../service/stores/pokemonStore';
   import { toast } from 'vue3-toastify';
   
   export default defineComponent({

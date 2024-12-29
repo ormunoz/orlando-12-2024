@@ -11,8 +11,8 @@
 
 <script lang="ts">
 import { defineComponent, ref, watch } from 'vue';
-import { usePokemonStore } from '@/service/stores/pokemonStore';
-import PokemonCard from '@/components/element/PokemonCardComponent.vue';
+import { usePokemonStore } from '../service/stores/pokemonStore';
+import PokemonCard from '../components/element/PokemonCardComponent.vue';
 
 export default defineComponent({
     name: 'MyPokemonsView',

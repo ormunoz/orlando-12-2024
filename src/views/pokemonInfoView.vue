@@ -17,10 +17,10 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
-import { PokemonServices } from "@/service/pokemon/pokemonServices";
-import { ShowPokemon } from "@/service/pokemon/types"
-import PokemonDetails from '@/components/element/PokemonDetailsComponent.vue';
-import PokemonEvolutionChain from '@/components/element/PokemonEvolutionChainComponent.vue';
+import { PokemonServices } from "../service/pokemon/pokemonServices";
+import { ShowPokemon } from "../service/pokemon/types"
+import PokemonDetails from '../components/element/PokemonDetailsComponent.vue';
+import PokemonEvolutionChain from '../components/element/PokemonEvolutionChainComponent.vue';
 
 
 export default defineComponent({

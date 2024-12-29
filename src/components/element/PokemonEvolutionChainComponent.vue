@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import {Evolution} from "@/service/pokemon/types";
+import {Evolution} from "../../service/pokemon/types";
 
 export default defineComponent({
   name: 'PokemonEvolutionChain',
